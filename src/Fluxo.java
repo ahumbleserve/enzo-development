@@ -18,6 +18,7 @@ public class Fluxo {
 	        System.out.println("Fim do metodo1");
 	    }
 
+	    
 	    private static void metodo2() {
 	        System.out.println("Ini do metodo2");
 	        for(int i = 1; i <= 5; i++) {
