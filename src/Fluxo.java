@@ -1,6 +1,7 @@
 public class Fluxo {
 
 	 public static void main(String[] args) {
+		 
 	        System.out.println("Ini do main");
 	        try {
 	        metodo1();
