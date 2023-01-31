@@ -9,6 +9,7 @@ public class TestaContaComExceptionChecked {
 			c.deposita();
 		} catch (MinhaException ex) {
 			System.out.println("Tratamento");
+			
 		}
 		
 	}
