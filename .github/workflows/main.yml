@@ -23,7 +23,7 @@ jobs:
     needs: Print-info
     runs-on: ubuntu-latest
     env:
-      TOKEN: ${{ secrets.REPO-SECRET }}
+      TOKEN: ${{ secrets.SECRET02 }}
     strategy:
       matrix:
         multi_label: ["teste01" , "uarauara02", "blaus03"]
