@@ -22,7 +22,18 @@ jobs:
   Print-info-2:
     needs: Print-info
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        multi_label: ["teste01" , "uarauara02", "blaus03"]
     steps:
-      - run: echo "==> ${{env.NOME_LOUCO}}"
+      - run: echo "==> ${{matrix.multi_label}}"
         env:
             NOME_LOUCO: uara uara
+            
+            
+            
+            
+            
+            
+            
+            
