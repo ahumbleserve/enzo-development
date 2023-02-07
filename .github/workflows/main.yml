@@ -26,7 +26,7 @@ jobs:
       matrix:
         multi_label: ["teste01" , "uarauara02", "blaus03"]
     steps:
-      - run: echo "==> ${{matrix.multi_label}} -> ${{Test-context.secrets.SECRET01}}"
+      - run: echo "==> ${{matrix.multi_label}} -> ${{secret.SECRET01}}"
         env:
             NOME_LOUCO: uara uara
             
