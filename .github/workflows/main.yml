@@ -20,6 +20,7 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
   Print-info-2:
+    needs: Print-info
     runs-on: ubuntu-latest
     steps:
       - run: echo "==> ${{env.NOME_LOUCO}}"
