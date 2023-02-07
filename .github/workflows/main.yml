@@ -22,11 +22,13 @@ jobs:
   Print-info-2:
     needs: Print-info
     runs-on: ubuntu-latest
+    env:
+      TOKEN: ${{ secrets.SECRET01 }}
     strategy:
       matrix:
         multi_label: ["teste01" , "uarauara02", "blaus03"]
     steps:
-      - run: echo "==> ${{matrix.multi_label}} -> ${{secret.SECRET01}}"
+      - run: echo "==> ${{env.TOKEN}} "
         env:
             NOME_LOUCO: uara uara
             
